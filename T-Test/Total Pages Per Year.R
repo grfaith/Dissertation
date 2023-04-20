@@ -4,7 +4,7 @@ library(tidyr)
 library(XML)
 library(xml2)
 
-setwd("C:\\Users\\grfai\\Documents\\0_Dissertation\\Code\\ChronAm\\T-Test")
+setwd("C:\\Users\\grfai\\Documents\\0_Dissertation\\Code\\ChronAm\\Title_FP")
 baseurl <- "https://chroniclingamerica.loc.gov/search/pages/results/"
 rowsperpg <- 1
 search_pause <- 7
@@ -12,6 +12,9 @@ search_pause <- 7
 annual_count <- data.frame(year = numeric(0),
                  hits = numeric(0),
                  stringsAsFactors = FALSE)
+
+
+
 
 for (year in 1770:1963) {
 
